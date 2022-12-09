@@ -1,0 +1,104 @@
+body {
+    height: auto;
+    margin: 0%;
+}
+
+h1 {
+    background-color: skyblue;
+    margin: 0%;
+    padding: 20px;
+    text-align: right;
+}
+
+.menu {
+
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.menu li:nth-child(2):hover #menu1,
+.menu li:nth-child(3):hover #menu2,
+.menu li:nth-child(3):hover #menu3 {
+    display: block;
+}
+
+#menu1,
+#menu2,
+#menu3 {
+    position: absolute;
+    width: auto;
+    max-width: 130px;
+    display: none;
+    background-color: slateblue;
+    padding: 0%;
+}
+
+#menu4 {
+    position: absolute;
+    width: auto;
+    max-width: 120px;
+    display: none;
+    background-color: slateblue;
+    padding: 0%;
+}
+
+#menu5 {
+    position: absolute;
+    width: auto;
+    max-width: 120px;
+    display: none;
+    background-color: slateblue;
+    padding: 0%;
+}
+
+#menu1 li,
+#menu2 li,
+#menu3 li {
+    display: block;
+}
+
+#menu1 li:hover,
+#menu2 li:hover,
+#menu3 li:hover {
+    color: blue;
+
+}
+
+img {
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+pic {
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+}
+
+div {
+    background-color: slategray;
+    margin: 0%;
+    padding: 10px;
+    text-align: right;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+
+    <style>
+        footer {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p,
+        h1 {
+            padding: 10px;
+            margin: 0%;
+
+        }
+
+        section {
+            position: absolute;
+            top: 0%;
+            left: 5%;
+            width: 30%;
+        }
+
+        article {
+            min-width: 300px;
+            margin-top: 1px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid steelblue;
+            background-color: white;
+
+        }
+
+        input {
+            width: 300px;
+            border: none;
+            background-color: white;
+            border-bottom: 1px solid gray;
+            height: 30px;
+        }
+
+        input,
+        label,
+        h3,
+        #district {
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        button {
+            display: block;
+            margin: 20px;
+            width: 80px;
+            border-radius: 4px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            float: right;
+            border: none;
+            background-color: rgb(175, 102, 243);
+        }
+
+        #district {
+            height: 50px;
+        }
+
+        /* combinator selector */
+        header p {
+            text-align: left;
+        }
+
+        article h3 {
+            font-family: Helvetica;
+            letter-spacing: 2px;
+        }
+
+        /* pseudo class selector */
+        input:focus {
+            outline: none !important;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        /* pseudo element selector */
+        header p::first-line {
+            font-weight: bold;
+            color: rgb(76, 0, 255);
+        }
+
+        article h3::after {
+            content: "*";
+            color: red;
+        }
+
+        /* attribute selector */
+        input[name^="option"] {
+            width: 20px;
+            height: 20px;
+        }
+        .pic {
+            padding: 5px;
+            width: 250px;
+            height: 502px;
+            position: relative;
+            left: 32%;
+        }
+    </style>
+    <link rel="stylesheet" href="labtest.css" />
+</head>
+<body>
+
+    <section>
+        <div class="section">
+            <div class="text">
+
+                <article>
+                    <div>
+                        <h2>1.Your Contact Details</h2>
+                        <form action="">
+                            <h3> Full Name</h3>
+                            <input type="text" title="name" required spellcheck="true">
+
+                            <h3>Patient Id if exists</h3>
+                            <input type="text" title="name" required spellcheck="true">
+
+                            <h3>Contact No</h3>
+                            <input type="number" min="6000000000" max="9999999999" required>
+                            <h3>Email Id</h3>
+                            <input type="email" required>
+                    </div>
+                    <h2>2. Address</h2>
+                    <h3>H:No</h3>
+                    <input type="text" required>
+
+                    <h3>Street</h3>
+                    <input type="text" required>
+
+                    <h3>Area</h3>
+                    <input type="text" required>
+
+                    <h3>District</h3>
+                    <select name="District" id="district" required>
+                        <option value="">Select</option>
+                        <option value="Chittoor">Chittoor</option>
+                        <option value="Karnool">Karnool</option>
+                        <option value="Mangalore">Mangalore</option>
+                        <option value="Bangalore">Bangalore</option>
+                    </select>
+
+                    <h3>Choose the Test Type</h3>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label><br>
+                    <input type="checkbox" id="c1" name="option1" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="c1">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Glucose Test">
+                    <label for="c2">Glucose Test</label>
+                    <h3>Do you want a hard copy of the report also?</h3>
+                    <input type="radio" id="c5" name="option" value="Yes" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="No">
+                    <label for="c6">No</label>
+                    <h3>Select Your Comfortable Date and Time</h3>
+                    <p>Check atleast one box without fail</p>
+                    <label for="c1">Start date: </label>
+                    <input type="date" required>
+                    <br>
+                    <label for="c1">End date: </label>
+                    <input type="date" required><br>
+                    <label for="c1">Time:</label>
+                    <input type="time" required>
+                    <button>Reset</button><br>
+                    <button>Submit</button><br>
+                    <div>@copyright. Only for demonstration purposes</div>
+            </div>
+        </div>
+
+        </article>
+        </form>
+    </section>
+
+    <div class="pic">
+        <img src="D:\IITR_2\FRONT_END\CSS\Graded-Project\Images\Lab-Test\lab-test.jpg" style="height: 310%;">
+    </div>
+
+</body>
+
+</html>
