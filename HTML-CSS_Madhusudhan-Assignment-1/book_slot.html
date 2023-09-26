@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  left: 100px;
+  bottom: 150px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=full_name] {
+  width: 20%;
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+  display:inline-table;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=full_name]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+</style>
+</head>
+<body>
+    <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Lab-Test\lab-test.jpg" style="position: fixed;right: 0px;">
+<form>
+  <div class="container">
+    <h1>Please fill in this form to book the slot</h1>
+    <p>1. Your Contact details</p>
+    <hr>
+    
+    <input type="text" placeholder="Full Name" name="Full_Name" id="Full_Name" required>
+    <input type="text" placeholder="Contact Number" name="Contact_Number" id="Contact_Number" required><br>
+    <input type="text" placeholder="Patient id" name="Patient" id="Patient" required>
+    <input type="text" placeholder="Enter Email id" name="email" id="email" required>
+
+    <p>2. Address</p>
+    <hr>
+    
+    <input type="text" placeholder="House Number" name="House_Number" id="House_Number" required>
+    <input type="text" placeholder="Street" name="Street" id="Street" required><br>
+    <input type="text" placeholder="Area" name="Area" id="Area" required>
+    <label for="district">District</label>
+    <select name id="district">
+        <option value="chennai">chennai</option>
+        <option value="chennai">kanchipuram</option>
+    </select>
+    <p>3. Choose test type</p>
+    <input type="radio" value="CBC" name="CBC" id="CBC"><label for ="CBC">CBC</label><br>
+    <input type="radio" value="Complete Urine" name="Complete Urine" id="Complete Urine"><label for ="Complete Urine">Complete Urine</label><br>
+    <input type="radio" value="Thyroid Stimulating Hormone(TSH) " name="THS" id="THS"><label for ="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone(TSH)</label><br>
+    <input type="radio" value="Lipid Profile" name="Lipid Profile" id="Lipid Profile"><label for ="Lipid Profile">Lipid Profile</label><br>
+    <input type="radio" value="Glucose Test" name="Glucose Test" id="Glucose Test"><label for ="Glucose Test">Glucose Test</label><br>
+
+    <p>4. Do you want a hard copy of the report also?</p>
+    <hr>
+    <input type="radio" value="Yes" name="Yes" id="Yes"><label for ="Yes">Yes</label><br>
+    <input type="radio" value="No" name="No" id="No"><label for ="No">No</label><br><br>
+    
+    <input type="submit" value="Sumbmit" style="background-color: aqua;">  
+    <input type="reset" value="Reset" style="background-color:aqua;">  
+  </div>
+  
+</form>
+
+</body>
+</html>

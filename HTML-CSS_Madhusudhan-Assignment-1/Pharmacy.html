@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Pharmacy.css">
+</head>
+
+    <body>
+        <header>
+        <h1 style="background-color:rgb(116, 115, 115);text-align: center;color: white;">Pharmacy</h1>
+        </header>
+        <ul>
+            <li><a class="active" href="#Home">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Our Medicines</a>
+              <div class="dropdown-content">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cold & Cough</a>
+              </div>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Health Care</a>
+              <div class="dropdown-content">
+                <a href="#">Baby Care</a>
+                <a href="#">Skin Care</a>
+                <a href="#">Home Care</a>
+                <a href="#">Personal Care</a>
+                <a href="#">Pet Care</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Lab Test</a>
+                <div class="dropdown-content">
+                  <a href="book_slot.html">book the slot</a>
+                </div>
+              </li>
+          </ul>
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Animation\ani1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Animation\ani2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Animation\ani3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Animation\ani4.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Animation\ani5.jpg" style="width:100%">
+              </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+            </script>
+
+           <h1 style="text-align: left;color: black;">Covid care</h1> 
+           <div class="row">
+            <div class="column">
+                <h3>covid kit</h3>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\c1.jpg" alt="coviself" style="width:100%">
+              <h4 style="color: blue;">Rs. 40</h4>
+              <h4 style="color: blue;">Offer: Rs.30/-</h4>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="column">
+                <h3>cloves</h3>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\c2.jpg" alt="clove" style="width:100%">
+              <h4 style="color: blue;">Rs. 240</h4>
+              <h4 style="color: blue;">Offer: Rs.170/-</h4>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="column">
+                <h3>spray</h3>
+              <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\c3.jpg" alt="spray" style="width:80%;">
+              <h4 style="color: blue;">Rs. 99</h4>
+              <h4 style="color: blue;">Offer: Rs.87/-</h4>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="column">
+                <h3>mask</h3>
+                <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\c4.jpg" alt="Mask" style="width:100%">
+                <h4 style="color: blue;">Rs. 45</h4>
+                <h4 style="color: blue;">Offer: Rs.30/-</h4>
+                <p><button>Add to Cart</button></p>
+              </div>
+          </div>
+
+          <h1 style="text-align: left;color: black;">Diabetes care</h1> 
+          <div class="row">
+           <div class="column">
+               <h3>BGR-34</h3>
+             <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\d1.jpg" alt="coviself" style="width:100%">
+             <h4 style="color: blue;">Rs. 45</h4>
+             <h4 style="color: blue;">Offer: Rs.30/-</h4>
+             <p><button>Add to Cart</button></p>
+           </div>
+           <div class="column">
+               <h3>Dabur</h3>
+             <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\d2.jpg" alt="clove" style="width:100%">
+             <h4 style="color: blue;">Rs. 45</h4>
+             <h4 style="color: blue;">Offer: Rs.30/-</h4>
+             <p><button>Add to Cart</button></p>
+           </div>
+           <div class="column">
+               <h3>Colgate</h3>
+             <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\d3.jpg" alt="spray" style="width:80%;">
+             <h4 style="color: blue;">Rs. 45</h4>
+             <h4 style="color: blue;">Offer: Rs.30/-</h4>
+             <p><button>Add to Cart</button></p>
+           </div>
+           <div class="column">
+               <h3>Unibic</h3>
+               <img src="C:\Users\91733\OneDrive\Desktop\GL\Resummission\HTML & CSS Assignment\images\Products\d4.png" alt="Mask" style="width:100%">
+               <h4 style="color: blue;">Rs. 35</h4>
+               <h4 style="color: blue;">Offer: Rs.30/-</h4>
+               <p><button>Add to Cart</button></p>
+             </div>
+         </div>
+
+
+          <footer>
+            <h5 style="background-color:rgb(11, 11, 11);text-align: center;color: white;">@copyright. Only for demonstration purposes</h5>
+            </footer>
+    </body>
+
+</html>
